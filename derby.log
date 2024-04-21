@@ -1,4 +1,4 @@
-Sun Apr 21 13:34:57 UTC 2024 Thread[RMI TCP Connection(4)-127.0.0.1,5,RMI Runtime] Cleanup action starting
+Sun Apr 21 14:00:02 UTC 2024 Thread[RMI TCP Connection(3)-127.0.0.1,5,RMI Runtime] Cleanup action starting
 java.sql.SQLException: Database '/Users/ibrahimkhaled/Downloads/Web1700_Oblig3/src/main/resources/static/Images/bilde.webp' not found.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
