@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--To ensure proper rendering and touch zooming-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!--Bootstrap library-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
+
+    <script src="Validation.js"></script>
+    <script src="ِEndre.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center" style="background-color: aquamarine">
+    <h2>Endre på Bestillingen</h2>
+</div>
+<div class="container">
+    <form class="form">
+        <input type="hidden" id="id"/>
+
+        <div class="form-group">
+            <label for="velg"> Velg film</label>
+            <select id="velg" class="form-control">
+                <option selected="selected">velg film her</option>
+                <option>film1</option>
+                <option>film2</option>
+                <option>film3</option>
+            </select>
+            <span id="velg1" style="color: red"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="antall"> Antall</label>
+            <input type="number" id="antall" onchange="vAntall(this.value)" class="form-control">
+            <span id="antall1" style="color: red"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label for="fornavn"> Fornavn</label>
+            <input type="text" id="fornavn" placeholder="Skriv inn fornavn" onchange="vFornavn(this.value)"
+                   class="form-control">
+            <span id="fornavn1" style="color: red"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="etternavn"> Etternavn</label>
+            <input type="text" id="etternavn" placeholder="skriv inn etternavn" onchange="vEtternavn(this.value)"
+                   class="form-control">
+            <span id="etternavn1" style="color: red"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Telefonnr</label>
+            <input type="tel" id="telefon" minlength="8" maxlength="8" placeholder="skriv inn telefonnr"
+                   onchange="vTlf(this.value)" class="form-control">
+            <span id="telefon1" style="color: red"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email"> E-post</label>
+            <input type="email" id="email" placeholder="skriv inn epost adresse" onchange="vEpost(this.value)"
+                   class="form-control">
+            <span id="email1" style="color: red"></span>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" onclick="endre()">Endre</button>
+        </div>
+
+    </form>
+
+
+</div>
+
+
+</body>
+</html>

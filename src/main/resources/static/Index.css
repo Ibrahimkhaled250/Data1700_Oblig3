@@ -1,0 +1,27 @@
+.bilde{
+    background-image: url("/Images/bilde.webp");
+    background-size: cover;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.jumbotron {
+    margin-bottom: 0;
+
+}
+label{
+    color: white;
+    text-align: center;
+}
+input{
+    box-shadow: greenyellow;
+
+}
+h3{
+    color: white;
+}
+#resultat{
+    color: aquamarine;
+}
+th{
+    color: black;
+}
